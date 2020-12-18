@@ -30,7 +30,8 @@ namespace WeatherApp
 
         public string perceivedTemp => $"Feels like {Main.WindChillTemp}\u00b0F";
 
-        public string icon => $"http://openweathermap.org/img/w/{Weather[0].WeatherIcon}.png";
+        private string src => $"https://openweathermap.org/img/w/"+ Weather[0].WeatherIcon +".png";
+        public System.Uri icon => new System.Uri(src);
 
         public string Summary => $"{perceivedTemp}. {char.ToUpper(Weather[0].WeatherDescription[0])+ Weather[0].WeatherDescription.Substring(1)}.";
     }

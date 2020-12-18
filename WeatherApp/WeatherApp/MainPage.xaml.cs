@@ -10,6 +10,7 @@ namespace WeatherApp
         {
             InitializeComponent();
             _restService = new RestService();
+            //Image icon = new Image { Source = ImageSource.FromUri(new System.Uri("https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Papio_anubis_%28Serengeti%2C_2009%29.jpg/200px-Papio_anubis_%28Serengeti%2C_2009%29.jpg")) };
         }
 
         async void OnButtonClicked(object sender, EventArgs e)
